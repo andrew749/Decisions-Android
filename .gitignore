@@ -1,0 +1,7 @@
+build
+*.class
+*.dex
+.gradle/*
+gradle
+Decisions/build/*
+.idea/*

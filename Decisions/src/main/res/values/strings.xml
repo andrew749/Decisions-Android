@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">Decisions</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Decisions</string>
+    <string name="runbutton">Run</string>
+    <string name="enterbutton">Enter Value</string>
+    <string name="numberoftestsedittext">Number of Tests</string>
+    <string name="optionsedittext">Enter an option to test</string>
+    <string name="option">Add Option</string>
+
+</resources>
