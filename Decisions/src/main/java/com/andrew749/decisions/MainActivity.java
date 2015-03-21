@@ -9,6 +9,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListAdapter;
@@ -64,15 +65,26 @@ public class MainActivity extends ActionBarActivity {
 		run.setOnClickListener(new View.OnClickListener() {
 
 			public void onClick(View arg0) {
-                testingnumber = Integer.parseInt(numberfield.getText()
-                        .toString());
-                for(int i=0;i<testingoptions.size();i++){
-                    testingoptions.get(i).clearValue();
+                if(numberfield.getText().length()>0&&testingoptions.size()>0) {
+                    testingnumber = Integer.parseInt(numberfield.getText()
+                            .toString());
+                    for (int i = 0; i < testingoptions.size(); i++) {
+                        testingoptions.get(i).clearValue();
+                    }
+                    testoptions();
+                    adapter.notifyDataSetChanged();
+                }else{
+                    Toast.makeText(getApplicationContext(),"Please Fill out the Fields",Toast.LENGTH_SHORT);
                 }
-				testoptions();
-				adapter.notifyDataSetChanged();
 			}
 		});
+        resultlist.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                deleteEntry(position);
+                return true;
+            }
+        });
 
 	}
 
@@ -81,6 +93,10 @@ public class MainActivity extends ActionBarActivity {
 		getMenuInflater().inflate(R.menu.activity_main, menu);
 		return true;
 	}
+    private void deleteEntry(int i){
+        testingoptions.remove(i);
+        adapter.notifyDataSetChanged();
+    }
 //options menu after input
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {

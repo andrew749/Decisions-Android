@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="fab_button_radius">56dip</dimen>
+    <dimen name="list_item_font_size">50dip</dimen>
 </resources>

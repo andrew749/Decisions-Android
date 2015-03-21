@@ -11,7 +11,7 @@
         android:layout_alignParentTop="true"
         android:textColor="#000000"
         android:text="" 
-        android:textSize="100dip"/>
+        android:textSize="@dimen/list_item_font_size"/>
 
     <TextView
         android:id="@+id/testingnumber"
@@ -21,6 +21,6 @@
         android:layout_alignParentTop="true"
         android:textColor="#000000"
         android:text=""
-        android:textSize="100dip" />
+        android:textSize="@dimen/list_item_font_size" />
 
 </RelativeLayout>
