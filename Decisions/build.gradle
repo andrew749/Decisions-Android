@@ -4,6 +4,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:1.0.+'
+
     }
 }
 apply plugin: 'android'
@@ -11,6 +12,7 @@ apply plugin: 'android'
 dependencies {
     compile 'com.android.support:support-v4:21.0.3'
     compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.melnykov:floatingactionbutton:1.2.0'
 }
 
 android {

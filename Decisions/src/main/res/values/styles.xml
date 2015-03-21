@@ -1,6 +1,10 @@
 <resources>
 
     <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarStyle">@style/actionbar</item>
     </style>
 
+    <style name="actionbar" parent="Base.Widget.AppCompat.ActionBar.Solid">
+        <item name="background">@color/actionbarcolor</item>
+    </style>
 </resources>
