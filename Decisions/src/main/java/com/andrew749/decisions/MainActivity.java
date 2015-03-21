@@ -104,7 +104,7 @@ public class MainActivity extends Activity {
 			return true;
 		case R.id.clear:
 			for (int i = 0; i < testingoptions.size(); ++i) {
-				testingoptions.set(i,null);
+				testingoptions.remove(i);
 			}
 			adapter.notifyDataSetChanged();
 			return true;

@@ -5,3 +5,4 @@ build
 gradle
 Decisions/build/*
 .idea/*
+*.iml
