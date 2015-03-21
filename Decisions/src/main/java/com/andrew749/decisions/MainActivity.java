@@ -5,6 +5,7 @@ import java.util.Random;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,12 +15,13 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class MainActivity extends Activity {
+import com.melnykov.fab.FloatingActionButton;
+
+public class MainActivity extends ActionBarActivity {
 	EditText numberfield;
 	EditText optionfield;
-	Button numberbutton;
 	Button run;
-	Button optionbutton;
+	FloatingActionButton optionbutton;
 	ListView resultlist;
 	private int testingnumber = 0;
 	Random gennumber;
@@ -34,8 +36,7 @@ public class MainActivity extends Activity {
 		
 		optionfield = (EditText) findViewById(R.id.editText1);
 		numberfield = (EditText) findViewById(R.id.editText2);
-		numberbutton = (Button) findViewById(R.id.button2);
-		optionbutton = (Button) findViewById(R.id.button1);
+		optionbutton = (FloatingActionButton) findViewById(R.id.add);
 		resultlist = (ListView) findViewById(R.id.listView1);
 		run = (Button) findViewById(R.id.button3);
 
@@ -43,24 +44,7 @@ public class MainActivity extends Activity {
 		adapter = new SpecialAdapter(getApplicationContext(),testingoptions);
 		resultlist.setAdapter(adapter);
 		gennumber = new Random(testingoptions.size());
-		//determines how many times an option will be tested
-		numberbutton.setOnClickListener(new View.OnClickListener() {
 
-			public void onClick(View v) {
-				try {
-					testingnumber = Integer.parseInt(numberfield.getText()
-							.toString());
-				} catch (Exception e) {
-					Toast.makeText(getApplicationContext(),
-							"Please enter a valid number!", Toast.LENGTH_LONG)
-							.show();
-				} finally {
-					
-				}
-
-				numberfield.setText("");
-			}
-		});
 		//determines the options which will be tested
 		optionbutton.setOnClickListener(new View.OnClickListener() {
 
@@ -80,6 +64,8 @@ public class MainActivity extends Activity {
 		run.setOnClickListener(new View.OnClickListener() {
 
 			public void onClick(View arg0) {
+                testingnumber = Integer.parseInt(numberfield.getText()
+                        .toString());
                 for(int i=0;i<testingoptions.size();i++){
                     testingoptions.get(i).clearValue();
                 }
@@ -103,9 +89,7 @@ public class MainActivity extends Activity {
 			finish();
 			return true;
 		case R.id.clear:
-			for (int i = 0; i < testingoptions.size(); ++i) {
-				testingoptions.remove(i);
-			}
+			testingoptions.clear();
 			adapter.notifyDataSetChanged();
 			return true;
 		/**case R.id.switchmode:

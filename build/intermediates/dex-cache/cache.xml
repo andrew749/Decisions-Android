@@ -2,32 +2,25 @@
 <items version="2" >
 
     <item
-        jar="/home/andrew/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jar="/home/andrew/Projects/Decisions-Android/Decisions/build/intermediates/exploded-aar/com.melnykov/floatingactionbutton/1.2.0/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/home/andrew/Projects/Decisions-Android/Decisions/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-c3e3ed59647c97c80d1eedb3c76dac4f9fa1d196.jar" />
+        sha1="65620ba5e576dcec2c86efa440b00d042a27383b">
+        <dex dex="/home/andrew/Projects/Decisions-Android/Decisions/build/intermediates/pre-dexed/debug/classes-d1429856209ec1020d9c1153b084cecedd4c4aed.jar" />
     </item>
     <item
-        jar="/home/andrew/Projects/Decisions-Android/Decisions/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jar="/home/andrew/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="/home/andrew/Projects/Decisions-Android/Decisions/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-6ff80e33a783f3358280e39400924bdda177eb1b.jar" />
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/home/andrew/Projects/Decisions-Android/Decisions/build/intermediates/pre-dexed/debug/library-2.4.0-8effd3e90cd9e23085905945e7ea49469b763584.jar" />
     </item>
     <item
-        jar="/home/andrew/Projects/Decisions-Android/Decisions/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jar="/home/andrew/Projects/Decisions-Android/Decisions/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.2/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="/home/andrew/Projects/Decisions-Android/Decisions/build/intermediates/pre-dexed/debug/classes-568c4fb8f25f1109b1f0afe2e23f9f45933b4333.jar" />
-    </item>
-    <item
-        jar="/home/andrew/Projects/Decisions-Android/Decisions/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="/home/andrew/Projects/Decisions-Android/Decisions/build/intermediates/pre-dexed/debug/classes-d5c7d6095c8cf7455faf2ad1dfd4598269be5021.jar" />
+        sha1="4796f18d3750bf2bfa078407a94a7f9db35b440d">
+        <dex dex="/home/andrew/Projects/Decisions-Android/Decisions/build/intermediates/pre-dexed/debug/classes-5f9d6fe4a67989e5b92a700d5708dac93021690c.jar" />
     </item>
 
 </items>
