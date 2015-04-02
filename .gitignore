@@ -7,3 +7,5 @@ gradle
 Decisions/build/*
 .idea/*
 *.iml
+
+Decisions/Decisions-release.apk
